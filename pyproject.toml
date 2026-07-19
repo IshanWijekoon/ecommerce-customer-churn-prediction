@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecommerce-customer-churn-prediction"
+version = "0.1.0"
+description = "E-commerce customer churn prediction with Harris Hawks Optimization feature selection"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

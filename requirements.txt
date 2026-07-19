@@ -1,0 +1,23 @@
+# Pip fallback / CI — prefer `conda env create -f environment.yml` for local work.
+# Pins track major versions used in environment.yml (Python 3.10–3.11).
+
+numpy==1.26.4
+pandas==2.2.3
+openpyxl==3.1.5
+scikit-learn==1.5.2
+scipy==1.14.1
+statsmodels==0.14.4
+matplotlib==3.9.2
+plotly==5.24.1
+seaborn==0.13.2
+joblib==1.4.2
+xgboost==2.1.1
+lightgbm==4.5.0
+shap==0.46.0
+torch==2.4.1
+ydata-profiling==4.12.0
+sweetviz==2.3.1
+pytorch-tabnet==4.1.0
+streamlit==1.39.0
+jupyter==1.1.1
+ipykernel==6.29.5

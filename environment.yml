@@ -1,0 +1,31 @@
+name: ecommerce-churn
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy=1.26.*
+  - pandas=2.2.*
+  - openpyxl=3.1.*
+  - scikit-learn=1.5.*
+  - scipy=1.14.*
+  - statsmodels=0.14.*
+  - matplotlib=3.9.*
+  - plotly=5.24.*
+  - seaborn=0.13.*
+  - joblib=1.4.*
+  - xgboost=2.1.*
+  - lightgbm=4.5.*
+  - shap=0.46.*
+  - pytorch=2.4.*
+  - cpuonly
+  - jupyter
+  - ipykernel
+  - pip:
+      - ydata-profiling==4.12.0
+      - sweetviz==2.3.1
+      - pytorch-tabnet==4.1.0
+      - streamlit==1.39.0
+      - -e .
