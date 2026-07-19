@@ -1,24 +1,24 @@
 [
   {
-    "accuracy":0.9911190053,
-    "precision":0.95,
-    "recall":1.0,
-    "f1":0.9743589744,
-    "roc_auc":0.9999662618,
-    "pr_auc":0.9998359331,
+    "accuracy":0.9751332149,
+    "precision":0.8932038835,
+    "recall":0.9684210526,
+    "f1":0.9292929293,
+    "roc_auc":0.9958445794,
+    "pr_auc":0.9772569488,
     "model":"TabNet_winning_subset",
     "n_features":17,
-    "train_time_sec":28.3386602
+    "train_time_sec":31.8677295
   },
   {
-    "accuracy":0.9902309059,
-    "precision":0.9543147208,
-    "recall":0.9894736842,
-    "f1":0.9715762274,
-    "roc_auc":0.9997750787,
-    "pr_auc":0.9989445179,
+    "accuracy":0.973357016,
+    "precision":0.880952381,
+    "recall":0.9736842105,
+    "f1":0.925,
+    "roc_auc":0.9950123707,
+    "pr_auc":0.9745756162,
     "model":"TabNet_all_features",
     "n_features":33,
-    "train_time_sec":38.5066471
+    "train_time_sec":27.3356074
   }
 ]

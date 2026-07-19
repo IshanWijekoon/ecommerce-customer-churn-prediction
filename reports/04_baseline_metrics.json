@@ -7,7 +7,7 @@
     "f1":0.575,
     "roc_auc":0.8864597391,
     "pr_auc":0.6723826912,
-    "train_time_sec":0.0378146
+    "train_time_sec":0.0433264
   },
   {
     "model":"RandomForest",
@@ -17,6 +17,6 @@
     "f1":0.7239819005,
     "roc_auc":0.9525472335,
     "pr_auc":0.8263054643,
-    "train_time_sec":0.2446623
+    "train_time_sec":0.2056009
   }
 ]
