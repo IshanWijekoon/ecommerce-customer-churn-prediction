@@ -1,3 +1,0 @@
-"""E-commerce customer churn prediction package."""
-
-__version__ = "0.1.0"

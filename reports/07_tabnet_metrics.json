@@ -1,0 +1,24 @@
+[
+  {
+    "accuracy":0.9911190053,
+    "precision":0.95,
+    "recall":1.0,
+    "f1":0.9743589744,
+    "roc_auc":0.9999662618,
+    "pr_auc":0.9998359331,
+    "model":"TabNet_winning_subset",
+    "n_features":17,
+    "train_time_sec":28.3386602
+  },
+  {
+    "accuracy":0.9902309059,
+    "precision":0.9543147208,
+    "recall":0.9894736842,
+    "f1":0.9715762274,
+    "roc_auc":0.9997750787,
+    "pr_auc":0.9989445179,
+    "model":"TabNet_all_features",
+    "n_features":33,
+    "train_time_sec":38.5066471
+  }
+]
