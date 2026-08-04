@@ -215,33 +215,24 @@ marimo/_lsp/
 __marimo__/
 
 # ---------------------------------------------------------------------------
-# Project artefacts (keep directory placeholders via .gitkeep)
+# Project artefacts
 # ---------------------------------------------------------------------------
 
-# Raw / intermediate / processed data (Excel, parquet, csv, etc.)
+# Raw Excel (download from Kaggle after cloning)
 data/raw/*
 !data/raw/.gitkeep
-data/interim/*
-!data/interim/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-data/external/*
-!data/external/.gitkeep
 
-# Fitted models and preprocessing dumps
-models/*.pkl
-models/*.joblib
-models/*.zip
-models/*.pt
-models/*.pth
-models/*.onnx
+# Generated tables from notebooks (large / reproducible by re-running)
+data/clean/*
+!data/clean/.gitkeep
+
+# Fitted models
+models/**
 !models/.gitkeep
 
-# Reports: profiling HTML, exported figures (keep folder + .gitkeep)
-reports/*.html
-reports/figures/*
-!reports/figures/.gitkeep
-!reports/.gitkeep
+# Generated charts
+figures/*
+!figures/.gitkeep
 
 # OS / editor noise
 .DS_Store

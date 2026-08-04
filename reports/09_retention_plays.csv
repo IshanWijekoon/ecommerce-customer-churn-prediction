@@ -1,6 +1,0 @@
-play,lever,owner,expected_effect
-Complaint recovery SWAT,Complain / UnhappyComplain,CX,Cut FN on high-risk complainers
-New-customer onboarding,Tenure / TenureBin,Growth,Reduce early-life churn
-Dormancy win-back,DaySinceLastOrder / IsDormant,CRM,Reactivate silent buyers
-Cashback / coupon targeting,CashbackAmount / CouponUsed,Loyalty,Lift engagement efficiently
-Logistics experience,WarehouseToHome,Ops,Improve delivery for remote tiers
