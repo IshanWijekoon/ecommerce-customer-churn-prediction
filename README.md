@@ -33,7 +33,6 @@ ecommerce-customer-churn-prediction/
 ├── environment.yml
 ├── requirements.txt
 ├── README.md
-└── VIVA_PREP.md          # Viva questions, member roles, how to present
 ```
 
 ### Why each folder exists
