@@ -111,61 +111,48 @@ Exact numbers can vary slightly by hardware; re-run notebooks for your machine.
 
 ## Findings
 
-### 1. Churn is rare, so accuracy is misleading
-
-![Share of customers who churned](figures/1_churn_share.png)
-
-Only ~16.8% of customers churned. A model that predicts "nobody leaves" would still
-score ~83% accuracy, which is why we judge everything on Recall, F1, and PR-AUC.
-
-### 2. Complaints plus low satisfaction is the sharpest risk signal
-
-![Churn by complain and satisfaction](figures/2_complain_satisfaction.png)
-
-The combination of a complaint and low satisfaction is worse than either alone.
-That pattern motivates the `UnhappyComplain` feature built in notebook 3.
-
-### 3. Random Forest clearly beats Logistic Regression
-
-![Baseline model metric comparison](figures/4_metric_comparison.png)
-
-RF reaches F1 ~0.72 versus LR at ~0.58. Churn here is non-linear, so RF becomes
-the workhorse for GA/PSO feature-selection fitness.
-
-### 4. GA beat PSO and beat the full feature set
-
-![GA vs PSO feature selection summary](figures/8_nia_summary.png)
-
-GA keeps 17 features at RF CV F1 ~0.68 and beats both PSO and the full feature
-set — fewer features scored better than all of them.
-
-### 5. TabNet catches almost every churner
-
-![TabNet confusion matrix](figures/7_tabnet_confusion.png)
-
-TabNet on the winning subset reaches Recall ~0.97. Missing a churner is the
-expensive error here, and TabNet rarely makes it.
-
-### 6. Tenure and Complain are the dominant drivers
-
-![Permutation feature importance](figures/8_permutation_importance.png)
-
-Shuffling Tenure or Complain causes the largest F1 drop. Short tenure and open
-complaints are the clearest churn drivers in this dataset.
-
-### 7. The high-risk band is genuinely high-risk
-
-![Predicted risk bands vs actual churn](figures/8_risk_bands.png)
-
-About ~91% of customers in the high-risk band actually churned, so the predicted
-scores are usable for retention targeting.
-
-### 8. Final leaderboard: TabNet on GA features wins
-
-![Final model leaderboard](figures/8_model_leaderboard.png)
-
-Across F1, Recall, and PR-AUC, TabNet trained on the GA feature subset leads the
-board and is the model we recommend for scoring customers.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="figures/1_churn_share.png" alt="Share of customers who churned" width="100%"><br>
+      <b>1. Churn is rare, so accuracy is misleading.</b> Only ~16.8% churn, so we judge on Recall, F1, and PR-AUC.
+    </td>
+    <td width="50%" valign="top">
+      <img src="figures/2_complain_satisfaction.png" alt="Churn by complain and satisfaction" width="100%"><br>
+      <b>2. Complaint + low satisfaction is the sharpest signal.</b> The combination is worse than either alone.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="figures/4_metric_comparison.png" alt="Baseline model metric comparison" width="100%"><br>
+      <b>3. Random Forest beats Logistic Regression.</b> F1 ~0.72 vs ~0.58; churn is non-linear.
+    </td>
+    <td width="50%" valign="top">
+      <img src="figures/8_nia_summary.png" alt="GA vs PSO feature selection summary" width="100%"><br>
+      <b>4. GA beats PSO and the full feature set.</b> 17 features at RF CV F1 ~0.68.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="figures/7_tabnet_confusion.png" alt="TabNet confusion matrix" width="100%"><br>
+      <b>5. TabNet catches almost every churner.</b> Recall ~0.97, few missed churners.
+    </td>
+    <td width="50%" valign="top">
+      <img src="figures/8_permutation_importance.png" alt="Permutation feature importance" width="100%"><br>
+      <b>6. Tenure and Complain are the top drivers.</b> Shuffling either causes the largest F1 drop.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="figures/8_risk_bands.png" alt="Predicted risk bands vs actual churn" width="100%"><br>
+      <b>7. The high-risk band is genuinely high-risk.</b> ~91% of that band actually churned.
+    </td>
+    <td width="50%" valign="top">
+      <img src="figures/8_model_leaderboard.png" alt="Final model leaderboard" width="100%"><br>
+      <b>8. TabNet on GA features wins.</b> Best F1, Recall, and PR-AUC across all models.
+    </td>
+  </tr>
+</table>
 
 ## Nature-inspired algorithms
 
