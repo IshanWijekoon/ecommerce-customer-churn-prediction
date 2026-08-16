@@ -116,23 +116,6 @@ Exact numbers can vary slightly by hardware; re-run notebooks for your machine.
 - **PSO (notebook 6):** continuous positions → binary masks via sigmoid; pbest/gbest velocity updates; same fitness as GA.
 - **TabNet (notebook 7):** attentive tabular neural net on the winning subset.
 
-## Viva preparation
-
-See **[VIVA_PREP.md](VIVA_PREP.md)** for:
-
-- data-flow / execution flow
-- top 20 viva Q&A
-- common mistakes
-- how to explain the project in simple English
-- which sections each of 5 group members should present
-
-## References
-
-1. Holland, J. H. (1992). *Adaptation in Natural and Artificial Systems*. MIT Press.
-2. Kennedy, J., & Eberhart, R. (1995). Particle Swarm Optimization. *IEEE ICNN*.
-3. Arik, S. Ö., & Pfister, T. (2021). TabNet: Attentive Interpretable Tabular Learning. *AAAI*.
-4. Verma, A. (2020). E-commerce Customer Churn Analysis and Prediction [Dataset]. Kaggle.
-
 ## License
 
 See [LICENSE](LICENSE).
