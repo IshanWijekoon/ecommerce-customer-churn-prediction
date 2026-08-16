@@ -230,9 +230,17 @@ data/clean/*
 models/**
 !models/.gitkeep
 
-# Generated charts
+# Generated charts (keep a small README gallery tracked)
 figures/*
 !figures/.gitkeep
+!figures/1_churn_share.png
+!figures/2_complain_satisfaction.png
+!figures/4_metric_comparison.png
+!figures/8_nia_summary.png
+!figures/7_tabnet_confusion.png
+!figures/8_permutation_importance.png
+!figures/8_risk_bands.png
+!figures/8_model_leaderboard.png
 
 # OS / editor noise
 .DS_Store
