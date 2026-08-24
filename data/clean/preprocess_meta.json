@@ -1,0 +1,9 @@
+{
+  "n_train": 4504,
+  "n_test": 1126,
+  "n_features": 33,
+  "train_churn_rate": 0.16829484902309058,
+  "test_churn_rate": 0.16873889875666073,
+  "recency_threshold": 3.0,
+  "random_seed": 42
+}

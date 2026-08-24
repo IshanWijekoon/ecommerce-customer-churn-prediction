@@ -225,10 +225,25 @@ data/raw/*
 # Generated tables from notebooks (large / reproducible by re-running)
 data/clean/*
 !data/clean/.gitkeep
+# Scoring bundle for clone-and-run Streamlit demo
+!data/clean/id_test.csv
+!data/clean/raw_test_profiles.csv
+!data/clean/nia_feature_selection_winner.json
+!data/clean/permutation_importance.csv
+!data/clean/model_leaderboard.csv
+!data/clean/retention_plays.csv
+!data/clean/preprocess_meta.json
 
 # Fitted models
 models/**
 !models/.gitkeep
+# Scoring bundle models
+!models/preprocess.joblib
+!models/lr_baseline.joblib
+!models/rf_baseline.joblib
+!models/tabnet_meta.joblib
+!models/tabnet_winning/
+!models/tabnet_winning/**
 
 # Generated charts (keep a small README gallery tracked)
 figures/*
