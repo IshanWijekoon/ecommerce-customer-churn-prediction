@@ -1,0 +1,6 @@
+play,lever,owner,expected_effect
+Complaint recovery SWAT,Complain / UnhappyComplain,Customer Experience,Fix issues before sending discounts
+New-customer onboarding,Tenure / TenureBin,Growth,Protect customers in first months
+Dormancy win-back,DaySinceLastOrder / IsDormant,CRM,Reactivate silent buyers
+Satisfaction rescue,SatisfactionScore,CX / Product,Follow up on low scores quickly
+Targeted loyalty rewards,CouponUsed / category features,Loyalty,"Give relevant offers, not blanket discounts"
