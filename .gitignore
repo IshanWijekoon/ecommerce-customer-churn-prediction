@@ -147,8 +147,9 @@ activemq-data/
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# Environments (.env.example is the committed OpenRouter template)
 .env
+!.env.example
 .envrc
 .venv
 env/
@@ -156,6 +157,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.streamlit/secrets.toml
 
 # Spyder project settings
 .spyderproject
