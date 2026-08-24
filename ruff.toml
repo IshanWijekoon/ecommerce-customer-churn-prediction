@@ -9,4 +9,4 @@ ignore = ["E501"]
 "tests/*" = ["E402"]
 
 [lint.isort]
-known-first-party = ["export_scoring_artifacts"]
+known-first-party = ["export_scoring_artifacts", "src"]
