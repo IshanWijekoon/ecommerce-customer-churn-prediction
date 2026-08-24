@@ -1,0 +1,13 @@
+target-version = "py311"
+line-length = 100
+
+[lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[lint.per-file-ignores]
+"tests/*" = ["E402"]
+"app/pages/*" = ["E402"]
+
+[lint.isort]
+known-first-party = ["export_scoring_artifacts", "src", "_bootstrap", "_data", "_ui"]

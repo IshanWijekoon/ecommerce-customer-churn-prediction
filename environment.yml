@@ -18,5 +18,8 @@ dependencies:
   - cpuonly
   - jupyter
   - ipykernel
+  - streamlit>=1.37
+  - python-dotenv>=1.0
   - pip:
       - pytorch-tabnet>=4.1.0
+      - openai>=1.40
