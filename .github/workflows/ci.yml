@@ -34,7 +34,7 @@ jobs:
           pip install -r requirements-dev.txt
 
       - name: Ruff
-        run: ruff check scripts tests
+        run: ruff check scripts src tests
 
   test:
     name: Unit tests
