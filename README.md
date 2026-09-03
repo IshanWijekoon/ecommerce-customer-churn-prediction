@@ -1,4 +1,4 @@
-# E-commerce Customer Churn Prediction
+# E-commerce Churn Scoring Desk
 
 [![CI](https://github.com/IshanWijekoon/ecommerce-customer-churn-prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/IshanWijekoon/ecommerce-customer-churn-prediction/actions/workflows/ci.yml)
 
